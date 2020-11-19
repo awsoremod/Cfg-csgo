@@ -1,0 +1,150 @@
+clear
+// Сенса (800 dpi, 1024x768 black bars, 6 in windows, razer deathadder essential)
+sensitivity 1.272
+ 
+zoom_sensitivity_ratio_mouse 1     
+m_rawinput 1   
+m_yaw 0.022 
+m_pitch 0.022000
+
+// Прицел
+cl_crosshair_drawoutline "1"
+cl_crosshair_dynamic_maxdist_splitratio "0.35"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "0.5"
+cl_crosshair_dynamic_splitdist "7"
+cl_crosshair_outlinethickness "1.000000"
+cl_crosshair_sniper_show_normal_inaccuracy "0"
+cl_crosshair_sniper_width "1"
+cl_crosshair_t "0.000000"
+cl_crosshairalpha "255"
+cl_crosshaircolor "4"
+cl_crosshaircolor_b "1"
+cl_crosshaircolor_g "1"
+cl_crosshaircolor_r "1"
+cl_crosshairdot "0"
+cl_crosshairgap "-2"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairsize "1"
+cl_crosshairstyle "4.000000"
+cl_crosshairthickness "0"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "3"
+
+// Руки 
+//viewmodel_presetpos 0
+//viewmodel_fov "68"
+//viewmodel_offset_x "2.5"
+//viewmodel_offset_y "2"
+//viewmodel_offset_z "-2"
+
+// Руки 
+viewmodel_presetpos 3
+viewmodel_fov "68"
+viewmodel_offset_x "2.5"
+viewmodel_offset_y "0"
+viewmodel_offset_z "-1.5"
+
+viewmodel_recoil "0"
+cl_bob_lower_amt "0"
+cl_bobamt_lat "0"
+cl_bobamt_vert "0"
+cl_bobcycle "0"
+cl_viewmodel_shift_left_amt "0"
+cl_viewmodel_shift_right_amt "0"
+
+// Радар
+cl_hud_radar_scale 1
+cl_radar_scale 0.445
+cl_radar_rotate 1                                                            
+cl_radar_always_centered 0 
+// cl_radar_icon_scale_min 0.45
+cl_radar_icon_scale_min 1.25
+//cl_radar_square_with_scoreboard 0
+
+// Настройки Hud'а 
+cl_hud_color 0 
+cl_hud_healthammo_style 0
+hud_scaling 0.85 
+cl_hud_background_alpha 0.5 
+cl_hud_playercount_pos 0 
+cl_hud_playercount_showcount 0 
+hud_showtargetid 1
+cl_hud_bomb_under_radar 1
+
+// Настройка соединения 
+cl_interp 0
+cl_interp_ratio 1
+rate 786432                                                 
+//cl_updaterate 128
+//cl_cmdrate 128
+
+// Разное                                              
+fps_max 300
+r_cleardecals
+voice_enable 1
+gameinstructor_enable 0
+ui_steam_overlay_notification_position bottomleft 
+cl_show_clan_in_death_notice 0 
+cl_playerspray_auto_apply 0
+cl_autowepswitch 0
+cl_use_opens_buy_menu 0
+cl_hide_avatar_images ""
+cl_buywheel_nomousecentering 1
+r_dynamic 0
+r_drawtracers_firstperson "0"
+mat_monitorgamma 1.9 
+mat_monitorgamma_tv_enabled "0"
+net_graph 1
+net_graphproportionalfont 0
+
+// Бинды
+bind "CTRL" "+speed"
+bind "SHIFT" "+duck"
+bind "c" "+voicerecord"
+
+// Бинд для раскидок, прыжок
+alias "+gaver" "+jump;-attack"
+alias "-gaver" "-jump"
+bind "x" "+gaver"
+
+// Бинд для раскидок, прицел
+bind "q" test
+alias test test1
+alias test1 "alias test test2; cl_crosshaircolor 1; cl_crosshaircolor_b 1; cl_crosshaircolor_g 1; cl_crosshaircolor_r 1; cl_crosshairalpha "255"; cl_crosshairgap "-1"; cl_crosshairsize "9999"; cl_crosshairdot "0"; cl_crosshair_t 0; cl_crosshair_drawoutline "1"; cl_crosshairthickness "0"; cl_crosshair_outlinethickness 1          
+
+alias test2 "alias test test1; cl_crosshaircolor 4; cl_crosshaircolor_b 1; cl_crosshaircolor_g 1; cl_crosshaircolor_r 1; cl_crosshairalpha "255"; cl_crosshairgap "-2"; cl_crosshairsize "1"; cl_crosshairdot "0"; cl_crosshair_t 0; cl_crosshair_drawoutline "1"; cl_crosshairthickness "0"; cl_crosshair_outlinethickness 1 
+
+// Бинд для бхопа
+bind "MWHEELDOWN" "+jump"
+
+// Полёт
+bind "alt" "noclip"
+
+// Кровь и пули
+//bind ctrl "+speed; r_cleardecals"
+//bind shift "+duck; r_cleardecals"
+
+bind ctrl "+duck; r_cleardecals"
+bind shift "+speed; r_cleardecals"
+bind w "+forward; r_cleardecals"
+bind a "+moveleft; r_cleardecals"
+bind d "+moveright; r_cleardecals"
+bind s "+back; r_cleardecals"
+
+// Быстрые флешки
+bind "mouse5" "use weapon_knife; use weapon_flashbang"
+
+bind "v" "use weapon_smokegrenade"
+
+// Молотов и фаер
+bind "mouse4" "use weapon_molotov; use weapon_incgrenade"
+
+// Для тренировки
+bind "f1" "sv_cheats 1; mp_warmuptime 191223; sv_infinite_ammo 1; sv_grenade_trajectory 1; sv_grenade_trajectory_time 6; bot_kick; give weapon_molotov; give weapon_flashbang; give weapon_smokegrenade; god"
+bind "n" "record record.record;ent_fire smokegrenade_projectile kill;snd_playsounds Music.StopAllExceptMusic;stop;snd_playsounds Buttons.snd37"
+bind "h" "sv_rethrow_last_grenade"
+
+// Нож
+bind "f2" knifegg
+alias knifegg "sv_cheats 1; mp_drop_knife_enable 1; give weapon_knife_butterfly; echo ent_fire weapon_knife addoutput "classname weapon_knifegg"
