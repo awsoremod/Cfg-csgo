@@ -1,1 +1,1 @@
--novid -console -tickrate 128 -freq 75 +cl_updaterate 128
+-novid -console -tickrate 128 -freq 75
