@@ -1,10 +1,13 @@
-1280:1024   sensitivity 0.915      
 dpi   800 
+
+5:4   sensitivity 0.915      
 EDPi  732 
 
-1920:1080   sensitivity  1.301                                                                 
-dpi   800 
+16:9  sensitivity  1.301                                                                 
 EDPi  1041
 
+16:10 sensitivity  1.171                                                                
+EDPi  937
 
-
+4:3   sensitivity  0.976                                                               
+EDPi  781
