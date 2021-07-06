@@ -1,2 +1,2 @@
--novid -tickrate 128 -freq 75 -refresh 75 +exec autoexec
-//иногда -allow_third_party_software
+-novid -tickrate 128 -freq 75 -refresh 75 
+//иногда -allow_third_party_software +exec autoexec
