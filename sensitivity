@@ -1,11 +1,11 @@
 dpi   800 
+m_pitch 0.022  
 
-4:3   sensitivity 0.915              
-EDPi   781        
+5:4   sensitivity 1.3013333334
+m_yaw 0.01546875  
 
-16:9  sensitivity 1.22                               
-EDPi   976   
+4:3   sensitivity 1.22
+m_yaw 0.0165
 
-
-
- 
+16:9  sensitivity 0.915 
+m_yaw 0.022 
