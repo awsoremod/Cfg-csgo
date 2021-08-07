@@ -15,7 +15,7 @@
 	"setting.mat_software_aa_strength"		"0"
 	"setting.mat_motion_blur_enabled"		"0"
 	"setting.mat_texturestreaming"		"0"
-	"setting.r_player_visibility_mode"		"0"
+	"setting.r_player_visibility_mode"		"1"
 	"setauto.mat_enable_uber_shaders"		"1"
 	"setting.defaultres"		"1280"
 	"setting.defaultresheight"		"1024"
