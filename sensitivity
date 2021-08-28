@@ -1,1 +1,6 @@
-
+DPI 800, 1000hz
+sensitivity 1.22
+m_yaw 0.0165            sensitivity 0.915 
+m_pitch 0.022           sensitivity 1.22
+horizontal EDPI 732
+vertical   EDPI 976
