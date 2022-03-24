@@ -1,2 +1,2 @@
--novid 
--freq 75 -tickrate 128 -allow_third_party_software
+-novid -freq 75 
+-tickrate 128 -allow_third_party_software
